@@ -32,7 +32,6 @@ A minimal browser extension for Brave (and other Chromium-based browsers) that t
 ```
 brave-dark-toggle/
 ├── manifest.json       # Extension configuration
-├── content.js         # Dark mode CSS injection
 ├── background.js      # Click handler and state management
 └── README.md          # This file
 ```
@@ -42,7 +41,6 @@ brave-dark-toggle/
 1. **Click Handler**: Click the toolbar button to toggle dark mode
 2. **Content Script** (`content.js`): Injects CSS to invert colors and apply dark mode
 3. **Background Script** (`background.js`): Manages state, badge, and toolbar click events
-4. **Storage**: Uses Chrome's local storage to remember preferences per domain
 5. **Badge**: Shows "ON" indicator when dark mode is active
 
 ## Customization
