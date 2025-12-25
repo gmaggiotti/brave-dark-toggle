@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Dark Mode Toggle",
+  "description": "Toggle dark mode per site with one click or shortcut",
+  "version": "1.0",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_title": "Toggle Dark Mode"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "toggle-dark-mode": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+D",
+        "mac": "Command+Shift+D"
+      },
+      "description": "Toggle dark mode for current tab"
+    }
+  }
+}
