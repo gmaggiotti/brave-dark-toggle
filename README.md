@@ -5,10 +5,9 @@ A minimal browser extension for Brave (and other Chromium-based browsers) that t
 ## Features
 
 - 🌙 One-click dark mode toggle
-- 💾 Remembers your preference for each domain
+- 💾 Keeps your preferences on each tab
 - 🏷️ Badge indicator shows "ON" when active
 - ⚡ Fast and lightweight - no popup UI
-- 🔒 Privacy-focused - settings stored locally
 
 ## Installation
 
