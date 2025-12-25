@@ -18,6 +18,17 @@ async function toggleDarkMode(tabId) {
           window[observerId].disconnect();
           delete window[observerId];
         }
+        
+        // Clean up any inline filters applied by the observer (especially for Google Sheets)
+        document.querySelectorAll('canvas').forEach(canvas => {
+          canvas.style.filter = '';
+        });
+        
+        // Clean up any other elements that might have filters
+        document.querySelectorAll('.docs-sheet-container, .cell-input, .docs-sheet-cell-text').forEach(el => {
+          el.style.filter = '';
+        });
+        
         return;
       }
 
